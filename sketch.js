@@ -1,5 +1,5 @@
-let num_puntos_par = 80; // ancho del tejido
-let diam_punto = 3; // diámetro de los puntos
+let num_puntos_par = 180; // ancho del tejido
+let diam_punto = 2; // diámetro de los puntos
 let x0_p; // centro del primer punto cuando se teja fila par para que quede centrada
 let x0_i; // centro del primer punto cuando se teja fila impar
 let hilos = []; // arreglo relleno con los colores de los hilos
@@ -12,7 +12,7 @@ function setup() {
   x0_p = (width - (num_puntos_par * diam_punto)) / 2 + diam_punto / 2;
   x0_i = (width - (num_puntos_par * diam_punto)) / 2 + diam_punto;
   y0 = 80;
-  num_carreras = 70;
+  num_carreras = 100;
   strokeWeight(diam_punto);
   canvas.mouseClicked(draw)
   //button = createButton('generar');
