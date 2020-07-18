@@ -70,11 +70,9 @@ function inicializar_hilos() {
     //c = color(int(random(255)), int(random(255)), int(random(255)));
     //append(hilos, c);
     append(hilos, int(random(255)));
-    let amarillo = color(255,217,25);
-    hilos[int(random(num_puntos_par * 2))] = amarillo
-}
   }
-  
+  let amarillo = color(255,217,25);
+  hilos[int(random(num_puntos_par * 2))] = amarillo;
 }
 
 function swap_hilos_par() {
