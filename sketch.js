@@ -22,6 +22,7 @@ function setup() {
 
 function draw() {
   background(255);
+  hilos = [];
   inicializar_hilos();
   for(var i = 0; i < num_carreras; i++) {
     teje_fila_par(y0 + diam_punto * i);
@@ -29,7 +30,7 @@ function draw() {
   }
   textAlign(CENTER);
   noStroke();
-  text('Tartan generator - @sergiotellolee 2020', 0, 330, width);
+  text('@sergiotellolee 2020', 0, 330, width);
   noLoop();
 }
 
@@ -69,6 +70,9 @@ function inicializar_hilos() {
     //c = color(int(random(255)), int(random(255)), int(random(255)));
     //append(hilos, c);
     append(hilos, int(random(255)));
+    let amarillo = color(255,217,25);
+    hilos[int(random(num_puntos_par * 2))] = amarillo
+}
   }
   
 }
